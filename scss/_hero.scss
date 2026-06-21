@@ -1,0 +1,186 @@
+/** @format */
+@use "variables" as *;
+
+/* =========================================
+HERO SECTION
+========================================= */
+
+.hero {
+	padding: 72px $space-xl $space-2xl;
+	display: flex;
+	align-items: center;
+	gap: $space-2xl;
+}
+
+.hero-left {
+	flex: 1;
+	max-width: 520px;
+}
+
+/* =========================================
+AVAILABILITY BADGE
+========================================= */
+
+.hero-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	background: rgba(6, 182, 212, 0.08);
+	border: 1px solid rgba(6, 182, 212, 0.2);
+	padding: 5px 13px;
+	border-radius: 20px;
+	font-size: 12px;
+	color: $accent;
+	margin-bottom: 22px;
+}
+
+.bdot {
+	width: 6px;
+	height: 6px;
+	background: #06b6d4;
+	border-radius: 50%;
+	animation: blink 2s infinite;
+}
+
+/* =========================================
+BADGE ANIMATION
+========================================= */
+
+@keyframes blink {
+	0%,
+	100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.25;
+	}
+}
+
+/* =========================================
+HERO CONTENT
+========================================= */
+
+.hero h1 {
+	font-size: $font-hero;
+	font-weight: $weight-extra-bold;
+	line-height: 1.1;
+	letter-spacing: -1.5px;
+	margin-bottom: 10px;
+	color: $text-primary;
+}
+
+.hero h1 span {
+	color: $accent;
+}
+
+.hero-role {
+	font-size: $font-lg;
+	color: $text-secondary;
+	font-weight: $weight-medium;
+	margin-bottom: 14px;
+}
+
+.hero-bio {
+	font-size: $font-md;
+	color: $text-muted;
+	line-height: 1.75;
+	margin-bottom: 28px;
+}
+
+/* =========================================
+HERO BUTTONS
+========================================= */
+
+.hero-btns {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 36px;
+}
+
+/* =========================================
+PRIMARY BUTTON
+========================================= */
+
+.btn-p {
+	background: $primary;
+	color: $white;
+	border: none;
+	padding: 11px 24px;
+	border-radius: $radius-sm;
+	font-size: $font-md;
+	font-weight: $weight-semibold;
+	font-family: $font-primary;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	transition:
+		background $transition-normal,
+		transform $transition-normal;
+	&:hover {
+		background: $accent;
+		transform: translateY(-2px);
+	}
+}
+
+.btn-p,
+.btn-p:link,
+.btn-p:visited,
+.btn-p:hover,
+.btn-p:active {
+	text-decoration: none;
+	color: $white;
+}
+
+/* =========================================
+SECONDARY BUTTON
+========================================= */
+
+.btn-s {
+	background: transparent;
+	color: $text-secondary;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	padding: 11px 24px;
+	border-radius: $radius-sm;
+	font-size: $font-md;
+	font-family: $font-primary;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	text-decoration: none;
+	transition:
+		background $transition-normal,
+		transform $transition-normal;
+	&:hover {
+		border-color: $border-accent-hover;
+        color: $accent;
+		transform: translateY(-2px);
+	}
+}
+
+/* =========================================
+HERO STATS
+========================================= */
+
+.hero-stats {
+	display: flex;
+	gap: $space-lg;
+}
+
+/* =========================================
+STAT ITEMS
+========================================= */
+
+.stat-n {
+	font-size: $font-2xl;
+	font-weight: $weight-extra-bold;
+	color: $accent;
+}
+
+.stat-l {
+	font-size: $font-sm;
+	color: $text-muted-dark;
+	margin-top: 2px;
+}

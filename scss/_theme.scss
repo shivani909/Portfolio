@@ -1,0 +1,227 @@
+/** @format */
+@use "variables" as *;
+
+/* =========================================
+LIGHT THEME
+========================================= */
+
+body.light-theme {
+	background: $bg-light;
+	color: $text-light-primary;
+
+	/* =========================================
+	NAVBAR
+	========================================= */
+
+	.p {
+		background: $bg-light;
+	}
+
+	.nav {
+		background: rgba(255, 255, 255, 0.9);
+		border-bottom: 1px solid $border-light-theme;
+
+		.nav-links a {
+			color: #475569;
+
+			&:hover {
+				color: $accent;
+			}
+
+			&.active {
+				color: $accent;
+			}
+		}
+	}
+
+	/* =========================================
+	ABOUT SECTION
+	========================================= */
+
+	#about {
+		background: $bg-light;
+
+		h1,
+		.pcard-name {
+			color: $text-light-primary;
+		}
+
+		.hero-role,
+		.hero-bio,
+		.stat-l {
+			color: $text-light-secondary;
+		}
+
+		.pcard {
+			background: $bg-light-card;
+			border: 1px solid $border-light-theme;
+		}
+	}
+
+	/* =========================================
+	PROJECTS SECTION
+	========================================= */
+
+	#projects {
+		background: $bg-dark;
+
+		.sec-h {
+			color: $text-primary;
+		}
+
+		.sec-p {
+			color: $text-light-muted;
+		}
+
+		.pj {
+			background: $bg-light-card;
+			border: 1px solid $border-light-theme;
+		}
+
+		.pj-h {
+			color: $text-light-primary;
+		}
+
+		.pj-d {
+			color: $text-light-secondary;
+		}
+	}
+
+	/* =========================================
+	SKILLS SECTION
+	========================================= */
+
+	#skills {
+		background: $bg-dark;
+
+		.sec-h {
+			color: $white;
+		}
+
+		.sec-p {
+			color: $text-light-muted;
+		}
+
+		.tp {
+			background: $bg-light-card;
+			border: 1px solid $border-light-theme;
+		}
+
+		.tchip {
+			background: $bg-light;
+			border: 1px solid $border-light-theme;
+			color: $text-muted;
+			transition: $transition-normal;
+			&:hover{
+				color: $accent;
+				border-color: $accent;
+				transform: translateY(-2px);
+				box-shadow: 0 0 20px rgba(34, 211, 238, .15);
+			}
+		}
+
+		.sk-name {
+			color: $text-primary;
+		}
+
+		.sk-pct {
+			color: $text-light-muted;
+		}
+	}
+
+	/* =========================================
+	EXPERIENCE SECTION
+	========================================= */
+
+	#experience {
+		background: $bg-light;
+
+		.sec-h {
+			color: $text-light-primary;
+		}
+
+		.sec-p,
+		.tl-d {
+			color: $text-light-secondary;
+		}
+
+		.tl-r {
+			color: $text-light-primary;
+		}
+
+		.tl-box {
+			background: $bg-light-card;
+			border: 1px solid $border-light-theme;
+		}
+	}
+
+	/* =========================================
+	CERTIFICATES SECTION
+	========================================= */
+
+	#certificates {
+		background: $bg-dark;
+
+		.sec-h {
+			color: $white;
+		}
+
+		.sec-p {
+			color: $text-light-muted;
+		}
+
+		.ccard {
+			background: $bg-light-card;
+			border: 1px solid $border-light-theme;
+		}
+
+		.cn {
+			color: $text-light-primary;
+		}
+
+		.cs {
+			color: $text-light-secondary;
+		}
+	}
+
+	/* =========================================
+	CONTACT SECTION
+	========================================= */
+
+	#contact {
+		background: $bg-dark !important;
+
+		.sec-h {
+			color: $text-primary !important;
+		}
+
+		.sec-p,
+		.ci-v,
+		.ci-l {
+			color: $text-light-muted !important;
+		}
+	}
+
+	.finput {
+		background: $bg-light-card;
+		color: $text-light-primary;
+		border: 1px solid #cbd5e1;
+
+		&::placeholder {
+			color: $text-light-muted;
+		}
+	}
+
+	/* =========================================
+	FOOTER
+	========================================= */
+
+	.foot {
+		background: $bg-light;
+		border-top: 1px solid $border-light-theme;
+	}
+
+	.ft {
+		color: $text-light-secondary;
+	}
+}

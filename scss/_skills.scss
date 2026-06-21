@@ -1,0 +1,161 @@
+/** @format */
+@use "variables" as *;
+
+/* =========================================
+SKILLS SECTION
+========================================= */
+
+.skills-wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.skill-list {
+	display: flex;
+	flex-direction: column;
+	gap: $space-sm;
+	width: 80%;
+	margin: 0 auto 50px;
+	margin-top: 40px;
+}
+
+.skrow {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+/* =========================================
+SKILL PROGRESS BARS
+========================================= */
+
+.sk-icon {
+	width: 32px;
+	height: 32px;
+	border-radius: $radius-sm;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: $font-lg;
+	flex-shrink: 0;
+}
+
+.sk-name {
+	font-size: $font-md;
+	font-weight: $weight-medium;
+	color: $text-primary;
+	min-width: 120px;
+}
+
+.sk-bg {
+	flex: 1;
+	height: 4px;
+	background: $border-light;
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+.sk-fill {
+	height: 100%;
+	border-radius: 2px;
+}
+
+.sk-pct {
+	font-size: $font-sm;
+	color: $text-muted;
+	min-width: 30px;
+	text-align: right;
+	animation: aurora 4s ease-in-out infinite;
+}
+
+/* =========================================
+GLOW ANIMATION
+========================================= */
+
+@keyframes aurora {
+	0% {
+		text-shadow:
+			0 0 10px #00d9ff,
+			0 0 20px #00d9ff;
+	}
+	50% {
+		text-shadow:
+			0 0 10px #7c3aed,
+			0 0 20px #7c3aed;
+	}
+	100% {
+		text-shadow:
+			0 0 10px #00ff99,
+			0 0 20px #00ff99;
+	}
+}
+
+/* =========================================
+TOOLS & TECHNOLOGIES
+========================================= */
+
+.tool-panels {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+
+.tp {
+	background: $bg-card;
+	border: 1px solid $border-light;
+	border-radius: $radius-md;
+	padding: 22px;
+}
+
+.tp-h {
+	font-size: $font-sm;
+	font-weight: $weight-semibold;
+	color: $text-muted;
+	margin-bottom: 12px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+.tp:last-child {
+	grid-column: span 2;
+	max-width: 750px;
+	margin: auto;
+}
+
+/* =========================================
+TECH STACK CHIPS
+========================================= */
+
+.chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 7px;
+}
+
+.tchip {
+	background: $bg-card;
+	border: 1px solid $border-light;
+	border-radius: $radius-sm;
+	padding: 6px 11px;
+	font-size: $font-sm;
+	font-weight: $weight-medium;
+	color: $text-muted;
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	transition:
+		border-color $transition-fast,
+		color $transition-fast,
+		transform $transition-fast;
+	&:hover {
+		border-color: $border-accent-hover;
+		color: $accent;
+		transform: translateY(-2px);
+	}
+}
+
+.tchip i {
+	font-size: 14px;
+	opacity: .9;
+}

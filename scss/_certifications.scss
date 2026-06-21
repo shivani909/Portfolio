@@ -1,0 +1,68 @@
+/** @format */
+@use "variables" as *;
+
+/* =========================================
+CERTIFICATIONS
+========================================= */
+
+.cert-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 12px;
+}
+
+.ccard {
+	background: $bg-card;
+	border: 1px solid $border-light;
+	border-radius: $radius-md;
+	padding: 14px 16px;
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.cicon {
+	width: 34px;
+	height: 34px;
+	border-radius: $radius-sm;
+	background: rgba(6, 182, 212, 0.08);
+	border: 1px solid $border-accent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: $font-lg;
+	flex-shrink: 0;
+}
+
+.cn {
+	font-size: $font-sm;
+	font-weight: $weight-semibold;
+	color: #94a3b8;
+	line-height: 1.4;
+	margin-bottom: 3px;
+}
+
+.cs {
+	font-size: 11px;
+	color: $text-muted-dark;
+}
+
+/* =========================================
+LANGUAGES
+========================================= */
+
+.lang-row {
+	display: flex;
+	gap: $space-sm;
+	margin-top: 20px;
+}
+
+.lpill {
+	background: rgba(6, 182, 212, 0.07);
+	border: 1px solid rgba(6, 182, 212, 0.16);
+	border-radius: 16px;
+	padding: 5px 14px;
+	font-size: $font-sm;
+	color: $accent;
+	font-weight: $weight-medium;
+}

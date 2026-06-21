@@ -1,0 +1,63 @@
+/** @format */
+@use "variables" as *;
+
+/* =========================================
+FOOTER LAYOUT
+========================================= */
+
+.foot {
+	padding: $space-lg $space-xl;
+	border-top: 1px solid $border-light;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* =========================================
+COPYRIGHT TEXT
+========================================= */
+
+.ft {
+	font-size: $font-sm;
+	color: $text-muted-dark;
+}
+
+/* =========================================
+SOCIAL ICONS CONTAINER
+========================================= */
+
+.socrow {
+	display: flex;
+	gap: $space-sm;
+}
+
+/* =========================================
+SOCIAL BUTTONS
+========================================= */
+
+.sb {
+	width: 32px;
+	height: 32px;
+	background: $bg-chip;
+	border: 1px solid $border-light;
+	border-radius: $radius-sm;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: $font-md;
+	color: $text-muted;
+	cursor: pointer;
+	text-decoration: none;
+	transition:
+		border-color $transition-fast,
+		color $transition-fast;
+}
+
+/* =========================================
+SOCIAL BUTTON HOVER
+========================================= */
+
+.sb:hover {
+	border-color: $border-accent-hover;
+	color: $accent;
+}

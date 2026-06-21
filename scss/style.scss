@@ -1,0 +1,26 @@
+/** @format */
+
+/* =========================================
+   GLOBAL IMPORTS
+   Main SCSS Entry File
+========================================= */
+
+@use "variables";
+@use "base";
+@use "navbar";
+@use "hero";
+@use "about";
+@use "skills";
+@use "experience";
+@use "certifications";
+@use "projects";
+@use "contact";
+@use "footer";
+@use "responsive";
+@use "theme";
+
+/* =========================================
+   GOOGLE FONTS
+========================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
