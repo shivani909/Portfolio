@@ -144,6 +144,7 @@ TECH STACK CHIPS
 	display: flex;
 	align-items: center;
 	gap: 7px;
+	cursor: default;
 	transition:
 		border-color $transition-fast,
 		color $transition-fast,

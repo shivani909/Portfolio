@@ -374,7 +374,7 @@ HERO CONTENT
 }
 
 .hero-bio {
-  font-size: 13px;
+  font-size: 16px;
   color: #334155;
   line-height: 1.75;
   margin-bottom: 28px;
@@ -738,6 +738,7 @@ TECH STACK CHIPS
   display: flex;
   align-items: center;
   gap: 7px;
+  cursor: default;
   transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 .tchip:hover {
@@ -1487,5 +1488,3 @@ body.light-theme .foot {
 body.light-theme .ft {
   color: #64748b;
 }
-
-/*# sourceMappingURL=style.css.map */
